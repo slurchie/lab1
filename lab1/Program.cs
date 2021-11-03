@@ -471,6 +471,124 @@ namespace lab1
             double Celcia1 = (double)((Farengeit1 / 1.8) - j);
             Console.WriteLine($"По Фаренгейту {Celcia1}");
 
+            //3.1
+            Console.WriteLine("3.1");
+            Console.WriteLine("Введите значение первой переменной: \n Введите значение второй переменной: ");
+            int pera = Convert.ToInt32(Console.ReadLine());
+            int perb = Convert.ToInt32(Console.ReadLine());
+            int tmp; 
+            tmp=pera;
+            pera = perb;
+            perb = tmp;
+            Console.WriteLine($"значение а:{pera}, значение b:{perb}");
+
+            //3.2
+            Console.WriteLine("3.2");
+            Console.WriteLine("Введите а: \n b: \n c: ");
+            pera = Convert.ToInt32(Console.ReadLine());
+            perb = Convert.ToInt32(Console.ReadLine());
+            int perc = Convert.ToInt32(Console.ReadLine());
+            tmp =pera;
+            pera = perb;
+            perb = perc;
+            perc = tmp;
+            Console.WriteLine($"a:{pera} , b: {perb}, c = {perc}");
+            tmp = perc;
+            perb = pera;
+            perc = perb;
+            pera = tmp;
+            Console.WriteLine($"a:{pera}, b:{perb},c:{perc} ");
+
+            //3.3
+            Console.WriteLine("3.3");
+            Console.WriteLine("введите число а: ");
+            pera = Convert.ToInt32(Console.ReadLine());
+            r = pera * pera; //за 2 операции
+            r *= r;
+            Console.WriteLine($"{r}");
+            r = pera * pera; //за 3 операции
+            r = r * pera;
+            r *= r;
+            Console.WriteLine($"{r}");
+            r = pera * pera; //за 4 операции
+            r = pera * r;
+            r *= r;
+            r = r * pera;
+            Console.WriteLine($"{r}");
+            r = pera * pera;
+            r *= r;
+            r *= r;
+            Console.WriteLine($"{r}");
+            r = pera * pera;
+            r *= r;
+            r *= r;
+            r = r * pera;
+            Console.WriteLine($"{r}");
+            r = pera * pera;
+            r *= r;
+            r *= pera;
+            r = r * r;
+            Console.WriteLine($"{r}");
+
+            //3.4
+            Console.WriteLine("3.4");
+            int a2,a3,a5,a10,a4,a8,a20,a16,a13,a15,a17,a12,a24,a28;
+            a2 = pera * pera;
+            a3= a2 * pera; //a3 3 operations
+            a5 = a2 * a3;
+            a10 = a5 * a5;
+            Console.WriteLine($"a3= {a3},a10= {a10}");
+            a2 = pera * pera;
+            a4 = a2 * a2;
+            a8 = a4 * a4;
+            a16 = a8 * a8;
+            a20 = a16 * a4;
+            Console.WriteLine($"a4={a4},a20={a20}");
+            a2 = pera * pera;
+            a3 = a2 * pera;
+            a5 = a2 * a3;
+            a8 = a3 * a5;
+            a13 = a8 * a5;
+            Console.WriteLine($"a5={a5},a13={a13}");
+            a2 = pera * pera;
+            a3 = pera * a2;
+            a5 = a3 * a2;
+            a10 = a5 * a5;
+            a13 = a10 * a3;
+            Console.WriteLine("получить а19 за 5 операций невозможно");
+            a2 = pera * pera;
+            a3 = a2 * pera;
+            a5 = a2 * a3;
+            a10 = a5 * a5;
+            a15 = a10 * a5;
+            a17 = a15 * a2;
+            Console.WriteLine($"a2={a2},a5={a5},a17={a17}");
+            a2 = pera * pera;
+            a4 = a2 * a2;
+            a8 = a4 * a2;
+            a12 = a8 * a4;
+            a24 = a12 * a12;
+            a28 = a24 * a4;
+            Console.WriteLine($"a4={a4},a12={a12},a28={a28}");
+
+            //3.5
+            pera = 10;
+            a2 = 10 * 10;
+            a3 = a2 * pera;
+            a5 = a3 * a2;
+            a10 = a5 * a5;
+            Console.WriteLine($"10^10={a10}");
+
+
+
+
+
+
+
+
+
+
+
 
 
 
